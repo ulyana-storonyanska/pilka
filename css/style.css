@@ -11,7 +11,8 @@
     position: absolute;
     border-radius: 50%;
     background-color: skyblue;
-    animation: bounce 5s linear infinite;
+    animation: bounce 5s linear infinite,
+        bounce_left 25s linear infinite;
     
 }
    
@@ -28,12 +29,21 @@
 
 @keyframes bounce {
     0% {
-        bottom: 100%;
+        bottom: 50%;
     }
     50% {
-        bottom: 0%;
+        bottom: 20px;
     }
-    110% {
-        bottom: 100%;
+    100% {
+        bottom: 50%;
+    }
+}
+
+@keyframes bounce_left {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
     }
 }
