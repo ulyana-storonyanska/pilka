@@ -1,0 +1,25 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.pilka {
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    background-color: skyblue;
+    
+}
+   
+
+.trawa {
+    display: block;
+    position: fixed;
+    background-color: green;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 1500px;
+}
