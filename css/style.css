@@ -1,15 +1,17 @@
 .body {
     margin: 0;
     padding: 0;
+     
 }
 
 .pilka {
     height: 50px;
     width: 50px;
     display: block;
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     background-color: skyblue;
+    animation: bounce 5s linear infinite;
     
 }
    
@@ -22,4 +24,16 @@
     bottom: 0;
     height: 20px;
     width: 1500px;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 100%;
+    }
+    50% {
+        bottom: 0%;
+    }
+    110% {
+        bottom: 100%;
+    }
 }
